@@ -4,6 +4,21 @@
         <style type="text/css"></style>
     </head>
     <body>
-        <pre style="word-wrap: break-word; white-space: pre-wrap;">print("Hello World!")</pre>
+        <pre style="word-wrap: break-word; white-space: pre-wrap;">
+local speed = false
+speed = true
+            while wait(10) do
+speed = false
+            wait(5)
+            speed = true
+            end
+repeat
+            task.wait(2.0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(6,0,0)
+            task.wait(1)
+             game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(16,1,4)
+            until speed == false
+
+</pre>
     </body>
 </html>
