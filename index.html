@@ -14,9 +14,11 @@ speed = false
             end
 repeat
             task.wait(2.0)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(6,0,0)
+            game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 32
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,15,0)
             task.wait(1)
-             game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(16,1,4)
+             game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,0,0)
+              game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 20
             until speed == false
 
 </pre>
