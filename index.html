@@ -5,22 +5,8 @@
     </head>
     <body>
         <pre style="word-wrap: break-word; white-space: pre-wrap;">
-local speed = false
-speed = true
-            while wait(10) do
-speed = false
-            wait(5)
-            speed = true
-            end
-repeat
-            task.wait(2.0)
-            game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 32
-    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,15,0)
-            task.wait(1)
-             game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,0,0)
-              game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 20
-            until speed == false
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/JohnyJonson/heatseeker/refs/heads/main/speed.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/JohnyJonson/heatseeker/refs/heads/main/fly.lua'))() -- press F to fly
 </pre>
     </body>
 </html>
